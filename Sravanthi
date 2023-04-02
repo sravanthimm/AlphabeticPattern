@@ -1,0 +1,442 @@
+package sravanthi;
+
+public class Launch {
+
+	public static void main(String[] args) {
+		int n=7;
+		for(int i=0; i<=n-1; ++i)
+		{
+			for(int j=0; j<=n-1; ++j)
+			{
+				if(i==0||j==n/2||i-j==n/2)
+				{
+				System.out.print("*");
+			}
+			else 
+			{
+				System.out.print(" ");    //j
+			}
+		}
+	
+	          for(int j=0; j<=n-1; ++j)
+		       {
+			      if(j==0 && i!=0 || j==n-1 && i!=0 ||i==n/2 || i==0 && j!=0 && j!=n-1)
+			      {
+			          System.out.print("*");
+		          }
+		       else 
+		          {
+			         System.out.print(" ");  //a
+		          }
+		 } 
+	          for(int j=0; j<=n-1; ++j)
+		       {
+	        	  if((i==j && i<=n/2 || (i+j==n-1 && i<=n/2)))
+		       
+			      {
+			          System.out.print("*");
+		          }
+		       else 
+		          {
+			         System.out.print(" ");  //v
+		          }
+		       }
+		      for(int j=0; j<=n-1; ++j)
+		       {
+			      if((j==0 && i!=0 || j==n-1 && i!=0 ||i==n/2 || i==0 && j!=0 && j!=n-1))
+			      {
+			          System.out.print("*");
+		          }
+		       else 
+		          {
+			         System.out.print(" ");  //a
+		          }
+		       }
+		         System.out.print(" ");
+		         
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((i==0 || i==n-1 || j==n/2))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //i
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((i==0 && j!=0)|| (i==n-1 && j!=n-1) || (i==n/2 && j!=0 &&j!=n-1)||(j==0 && i!=0 && i<=n/2)||(j==n-1 ||i>=n/2 && i!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //s
+			          }
+		           }
+		         System.out.print(" "); 
+		         
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 && i!=0 || j==n-1 && i!=0 ||i==n/2 || i==0 && j!=0 && j!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //a
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 || j==n-1|| i==j && i<=n/2 || i+j==n-1 && i<=n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //m
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 && i!=0 || j==n-1 && i!=0 ||i==n/2 || i==0 && j!=0 && j!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //a
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i==0 || i+j==n-1 || i==n-1 )
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //z
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((i==0 || i==n-1 || j==n/2))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //i
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 || j==n-1 || i==j)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //n
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i==0 || j==0 || i==n/2 && j<=n/2 || i==n-1 && j<=n/2 ||j==n/2 && i<=n/2 || j==n-1 && i!=n/2-1)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //g
+			          }
+			       }
+		         System.out.println();
+                   
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 ||(i==0|| i==n/2)&& j!=n-1|| j==n-1 && i!=0 && i<=n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //p
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 ||(i==0 || i==n/2) && j<=n/2 || j==n/2 && i!=0 && i<=n/2 || i-j==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //r
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 || j==n-1)&& i!=0 && i!=n-1 || (i==0 || i==n-1)&& j!=0 && j!=n-1)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //o
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 || j==n-1)&& i!=n-1 || (i==n-1 &&j!=0 && j!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //u
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((i==0 || i==n-1)&& j!=n-1 || j==0 || j==n-1 && i!=0 && i!=n-1)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //d
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i==0 || j==0 || i==n/2 && j<=n/2 || i==n-1 && j<=n/2 ||j==n/2 && i<=n/2 || j==n-1 && i!=n/2-1)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //g
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 || j==n/2+1)&& i!=0 && i<=n/2 ||(i==0 || i==n/2+1)&& j!=0 && j<=n/2 || i==j && i>=n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //q
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i==0 || j==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //t
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(((i==0 || i==n-1 || j==n/2)))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //i
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 && i!=0 || j==n-1 && i!=0 ||i==n/2 || i==0 && j!=0 && j!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //a
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 || j==n-1 || i==j)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //n
+			          }
+			       }
+		        
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((i==0 && j!=0)|| (i==n-1 && j!=n-1) || (i==n/2 && j!=0 &&j!=n-1)||(j==0 && i!=0 && i<=n/2)||(j==n-1 ||i>=n/2 && i!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //s
+			          }
+		           }
+		         System.out.println();  
+
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i==0 || j==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //t
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 || j==n/2 || i==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //h
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 && i!=0 || j==n-1 && i!=0 ||i==n/2 || i==0 && j!=0 && j!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //a
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 || j==n-1 || i==j)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //n
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 || i+j==n/2 || i-j==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //k
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i+j==n-1 ||(i==j && i<=n/2))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //y
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 || j==n-1)&& i!=0 && i!=n-1 || (i==0 || i==n-1)&& j!=0 && j!=n-1)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //o
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((j==0 || j==n-1)&& i!=n-1 ||(i==n-1 && j!=0 && j!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //u
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(i==0 || j==0 || i==n/2 && j<=n/2 || i==n-1 && j<=n/2 ||j==n/2 && i<=n/2 || j==n-1 && i!=n/2-1)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //g
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 ||(i==0 || i==n/2) && j<=n/2 || j==n/2 && i!=0 && i<=n/2 || i-j==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //r
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if((i==0 && j!=0)|| (i==n-1 && j!=n-1) || (i==n/2 && j!=0 &&j!=n-1)||(j==0 && i!=0 && i<=n/2)||(j==n-1 ||i>=n/2 && i!=n-1))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //s
+			          }
+		           }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(((i==0 || i==n-1 || j==n/2)))
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //i
+			          }
+			       }
+		         for(int j=0; j<=n-1; ++j)
+			       {
+				      if(j==0 ||(i==0 || i==n/2) && j<=n/2 || j==n/2 && i!=0 && i<=n/2 || i-j==n/2)
+				      {
+				          System.out.print("*");
+			          }
+			       else 
+			          {
+				         System.out.print(" ");  //r
+			          }
+			       }
+		         
+		    }
+  }
+ }
+  
